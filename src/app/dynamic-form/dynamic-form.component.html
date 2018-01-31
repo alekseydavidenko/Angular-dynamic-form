@@ -1,0 +1,8 @@
+<div class="container">
+  <form novalidate [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group" *ngFor="let element of elements">
+        <app-dynamic-form-element [element]="element" [form]="form"></app-dynamic-form-element>
+      </div>
+      <input type="submit" class="btn">
+  </form>
+</div>
